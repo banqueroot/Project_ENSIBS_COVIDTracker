@@ -34,11 +34,7 @@ Par la suite, j’ai créé des fonctions d’ajout manuel (listés comme manuad
 
 Toujours dans cette optique de pouvoir tester le programme tout au court de son développement, j’ai par la suite intégré les fonctions pour lister les citoyens et les lieux de fêtes, permettant de visualiser que les chaines et les fonctions d’intégration étaient fonctionnelles. Ces fonctions se révèleront également utiles pour tester les fonctions d’ajout et de manipulation des listes du programme. 
 
-Pour l’ajout de citoyens et de fêtes, Il a suffi de créer une interface utilisateur légère demandant saisie des différentes données nécessaires à l’ajout d’un élément (nom, prénom…) puis d’appeler la fonction d’ajout manuel correspondant créé en amont. Il y a une petite variation pour l’ajout de lieu 
-
-` `[1] ![](Aspose.Words.6a1acf0d-80f9-4ee5-8fcd-0bb487f96ecf.001.png)
-
-qui nécessite la création d’une liste de participants et de ses bidons qui lui soit propre. Cette création a après coup été ajoutée dans la fonction d’ajout manuel de lieux. 
+Pour l’ajout de citoyens et de fêtes, Il a suffi de créer une interface utilisateur légère demandant saisie des différentes données nécessaires à l’ajout d’un élément (nom, prénom…) puis d’appeler la fonction d’ajout manuel correspondant créé en amont. Il y a une petite variation pour l’ajout de lieu qui nécessite la création d’une liste de participants et de ses bidons qui lui soit propre. Cette création a après coup été ajoutée dans la fonction d’ajout manuel de lieux. 
 
 L’ajout de participants à une fête s’est révélé plus compliqué. Il a fallu dans un premier temps créer une interface utilisateur demandant la date, a fête et le nom du participant. La fonction a d’ailleurs été faite de sorte a ce que sans pression de 0 a la fin du premier ajout, elle se lance une nouvelle fois pour permettre des ajouts multiples plus ergonomiques. Une fois le nom de la fête et du participant entrées, la fonction effectue une recherche parmi les listes « lieux » et « citoyen » pour retrouver les éléments correspondants afin de pouvoir pointer sur la liste de participants correspondant au lieu en question et ajouter le participant. 
 
@@ -72,7 +68,6 @@ Lieu
 
 … 
 
-` `[2] ![](Aspose.Words.6a1acf0d-80f9-4ee5-8fcd-0bb487f96ecf.001.png)
 
 Le fichier « participants.txt » suit la syntaxe suivante : Date.an 
 
@@ -116,7 +111,6 @@ Nous vérifions par la suite pour chaque fête si l’année de cette date est i
 
 On fait pointer l’élément précèdent sur l’élément suivant de la fête supprimée et vice versa, la fête n’apparait alors plus dans la liste. 
 
-` `[3] ![](Aspose.Words.6a1acf0d-80f9-4ee5-8fcd-0bb487f96ecf.001.png)
 
 **III- Démarche de test du programme** 
 
@@ -135,4 +129,3 @@ Pour améliorer le logiciel, il serait envisageable d’y ajouter des fonctions,
 Il est également envisageable de permettre de créer différentes fêtes à différentes dates dans un même lieux en dissociant « lieux » et « fêtes ». 
 
 Pour conclure, ce projet m’a permis de suivre du début a la fin une démarche de construction d’un programme relativement important et ambitieux. Il m’a permis de me heurter à différents problèmes et à développer des techniques de débogage et de tests. Je suis plutôt satisfait du résultat qui, selon moi répond au cahier des charges imposé. Je suis également assez satisfait de l’interface utilisateur que j’ai cherché à rendre le plus accessible possible. 
-` `[4] ![](Aspose.Words.6a1acf0d-80f9-4ee5-8fcd-0bb487f96ecf.001.png)
